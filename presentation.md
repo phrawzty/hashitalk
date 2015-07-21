@@ -80,7 +80,7 @@ Oh there’s also a tonne of custom data sources because why not?
 
 Designed to be **resilient** to service degradation or failure. Practically speaking this means **everything buffers**, spools, caches, retries, and so forth.
 
-I’d like to say this was because we were good programmers that designed good software, but really it’s because we had 99 problems with HBase.
+I’d like to say this was because we were good programmers that designed good software, but really it’s because we had **99 problems with HBase**.
 
 Effectively we had a code base that was generally OK when some of those moving parts ceased to move.
 
@@ -95,4 +95,28 @@ Effectively we had a code base that was generally OK when some of those moving p
 
 ---
 ![original](terraform-theme.jpg)
+
+# **The end is nigh!**
+
+The **vast** majority of Crash-stats was located at a single data centre. One day word came down from on high our contract with said data centre was going to be left to expire and that there was no capacity at our other sites.
+
+«I don’t care where you go but you can’t stay here.»
+
+^ As if our data storage problems weren’t bad enough, we now had a very specific date for the end of the world.
+
+---
+![original](terraform-theme.jpg)
+
+# **Enter the S3**
+
+We switched to 🐌 S3 🐢 as a storage mechanism **well before** we embarked on migrating our entire stack to AWS.
+
+# TODO: WHY?
+
+^ If you’re coming from bare metal in a data centre, S3 is very, very slow.
+
+---
+![original](terraform-theme.jpg)
+
+# 💻 👉🏽☁️,  💸
 
